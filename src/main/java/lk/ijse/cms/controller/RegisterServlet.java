@@ -6,7 +6,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lk.ijse.cms.dto.User;
-import lk.ijse.cms.model.RegisterModel;
 import lk.ijse.cms.model.UserModel;
 
 import java.io.IOException;

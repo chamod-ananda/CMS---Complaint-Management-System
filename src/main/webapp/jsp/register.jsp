@@ -14,7 +14,7 @@
 <body>
 <div class="form-container">
     <h2>Create New Account</h2>
-    <form action="${pageContext.request.contextPath}/RgisterServlet" method="post">
+    <form action="${pageContext.request.contextPath}/RegisterServlet" method="post">
         <input type="text" name="username" placeholder="Enter Username" required>
         <input type="password" name="password" placeholder="Enter Your Password" required>
         <input type="password" name="confirmPassword" placeholder="Confirm Your Password" required>

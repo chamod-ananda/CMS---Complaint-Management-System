@@ -17,13 +17,15 @@
 <html>
     <head>
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" href="css/adminDashboard.css">
+        <link rel="stylesheet" href="../css/adminDashboard.css">
     </head>
     <body>
-        <h2>Welcome, <%= loggedUser.getUsername() %> (Admin)</h2>
-        <ul>
-            <li><a href="view_complaints.jsp">View All Complaints</a></li>
-            <li><a href="logout.jsp">Logout</a></li>
-        </ul>
+        <div class="dashboard">
+            <h2>Welcome, <%= loggedUser.getUsername() %> (Admin)</h2>
+            <ul class = "nav-list">
+                <li><a href="view_complaints.jsp">All Complaints</a></li>
+                <li><a href="logout.jsp">Logout</a></li>
+            </ul>
+        </div>
     </body>
 </html>

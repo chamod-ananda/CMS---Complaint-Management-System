@@ -17,6 +17,7 @@
 <html>
     <head>
         <title>Employee Dashboard</title>
+        <link rel="stylesheet" href="../css/employeeDashboard.css">
     </head>
     <body>
         <div class="dashboard">
