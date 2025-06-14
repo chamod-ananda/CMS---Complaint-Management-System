@@ -10,7 +10,7 @@ public class DBConnectionPool {
 
     static {
         dataSource = new BasicDataSource();
-        dataSource.setUrl("jdbc:mysql://localhost:3306/cms");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/cmsDb");
         dataSource.setUsername("root");
         dataSource.setPassword("chamo@99");
 
@@ -18,7 +18,7 @@ public class DBConnectionPool {
         dataSource.setMaxIdle(20);
         dataSource.setMaxOpenPreparedStatements(100);
 
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
     }
 
     public static Connection getConnection() throws SQLException {
