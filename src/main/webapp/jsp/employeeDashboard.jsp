@@ -97,5 +97,7 @@
         </table>
 
         <a href="<%= request.getContextPath() %>/LogoutServlet" class="logout-link">Logout</a>
+
+    <script src="${pageContext.request.contextPath}/js/employee-dashboard.js"></script>
     </body>
 </html>

@@ -14,10 +14,14 @@
 <html>
   <head>
       <title>Admin - All Complaints</title>
+<%--      <link rel="stylesheet" href="../css/adminView.css">--%>
+      <link rel="stylesheet" href="<%= request.getContextPath() %>/css/adminView.css">
+
   </head>
   <body>
     <h2>All Complaints</h2>
-    <a id="backBtn" href="<%= request.getContextPath() %>/jsp/adminDashboard.jsp" ...>Back to Dashboard</a>
+<%--    <a id="backBtn" href="<%= request.getContextPath() %>/jsp/adminDashboard.jsp" ...>Back to Dashboard</a>--%>
+    <a id="backBtn" href="<%= request.getContextPath() %>/jsp/adminDashboard.jsp">Back to Dashboard</a>
 
     <%
       String msg = request.getParameter("msg");
@@ -63,7 +67,7 @@
         <td><%= c.getTitle() %></td>
         <td><%= c.getDescription() %></td>
         <td>
-          <form action="AdminServlet" method="post" class="update-form" style="margin:0;">
+          <form action="AdminServlet" method="post" class="update-form"<%-- style="margin:0;"--%>>
             <input type="hidden" name="action" value="adminUpdate">
             <input type="hidden" name="id" value="<%= c.getId() %>">
 
@@ -79,7 +83,7 @@
           </form>
         </td>
         <td>
-          <form action="AdminServlet" method="post" style="margin:0;">
+          <form action="AdminServlet" method="post"<%-- style="margin:0;"--%>>
             <input type="hidden" name="action" value="adminDelete">
             <input type="hidden" name="id" value="<%= c.getId() %>">
             <button type="submit" class="delete-btn" onclick="return confirm('Are you sure you want to delete this complaint?');">Delete</button>
@@ -100,3 +104,4 @@
     </table>
   </body>
 </html>
+
