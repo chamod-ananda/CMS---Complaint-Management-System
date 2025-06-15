@@ -1,60 +1,73 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     color: #ffffff;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #9f7aea;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.dashboard {
+.card {
     background-color: #1e1e2f;
-    padding: 3rem 3.5rem;
-    border-radius: 18px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
     text-align: center;
-    width: 100%;
-    max-width: 450px;
+    width: 220px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
-.dashboard h2 {
-    font-size: 2rem;
-    color: #9f7aea;
-    margin-bottom: 2.2rem;
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(127, 90, 240, 0.5);
 }
 
-.dashboard .nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.dashboard .nav-list li {
-    list-style: none;
-    width: 100%;
-}
-
-.dashboard .nav-list li a {
-    display: block;
-    text-decoration: none;
-    color: #7f5af0;
-    font-size: 1.05rem;
+.card div:nth-child(2) {
+    font-size: 1.2rem;
     font-weight: 500;
-    border: 2px solid #7f5af0;
-    padding: 12px;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    width: 100%;
+    color: #cfcfcf;
+    margin-bottom: 1rem;
 }
 
-.dashboard .nav-list li a:hover {
+.card a {
+    text-decoration: none;
     background-color: #7f5af0;
     color: #ffffff;
-    box-shadow: 0 0 12px rgba(127, 90, 240, 0.6);
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #9f7aea;
 }

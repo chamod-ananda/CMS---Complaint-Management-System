@@ -20,12 +20,20 @@
         <link rel="stylesheet" href="../css/adminDashboard.css">
     </head>
     <body>
-        <div class="dashboard">
-            <h2>Welcome, <%= loggedUser.getUsername() %> (Admin)</h2>
-            <ul class = "nav-list">
-                <li><a href="view_complaints.jsp">All Complaints</a></li>
-                <li><a href="logout.jsp">Logout</a></li>
-            </ul>
+        <h2>Welcome, <%= loggedUser.getUsername() %> (Admin)</h2>
+
+        <div class="card-container">
+            <div class="card" onclick="location.href='<%= request.getContextPath() %>/AdminServlet?action=adminView'">
+                <div class="card-icon">🧾</div>
+                <div>All Complaints</div>
+                <a href="<%= request.getContextPath() %>/AdminServlet?action=adminView">Go</a>
+            </div>
+
+            <div class="card" onclick="location.href='<%= request.getContextPath() %>/LogoutServlet'">
+                <div class="card-icon">🚪</div>
+                <div>Logout</div>
+                <a href="<%= request.getContextPath() %>/LogoutServlet">Go</a>
+            </div>
         </div>
     </body>
 </html>
