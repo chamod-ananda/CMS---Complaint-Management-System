@@ -68,11 +68,13 @@ Admin Portal: http://localhost:8080/CMS_war_exploded/jsp/adminDashboard.jsp
 
 Employee Dashboard -
 
+(https://github.com/user-attachments/assets/474f98fb-1fe7-4007-a21a-1c80e2b725b6)
 
 
 
 Admin Dashboard -
 
+(https://github.com/user-attachments/assets/d615bf8a-637a-4dd8-bd93-fb589d1c3fb0)
 
 
 
