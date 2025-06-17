@@ -73,8 +73,8 @@
 
             <select name="status" required>
               <option value="PENDING" <%= "PENDING".equals(c.getStatus()) ? "selected" : "" %>>PENDING</option>
-              <option value="REJECT" <%= "REJECT".equals(c.getStatus()) ? "selected" : "" %>>REJECT</option>
               <option value="RESOLVED" <%= "RESOLVED".equals(c.getStatus()) ? "selected" : "" %>>RESOLVED</option>
+                <option value="REJECT" <%= "REJECT".equals(c.getStatus()) ? "selected" : "" %>>REJECT</option>
             </select>
 
             <input type="text" name="remarks" value="<%= c.getRemarks() != null ? c.getRemarks() : "" %>" placeholder="Add remarks">

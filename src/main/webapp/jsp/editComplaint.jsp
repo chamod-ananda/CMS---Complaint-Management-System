@@ -24,31 +24,34 @@
 %>
 
 <html>
-    <head>
-        <title>Edit Complaint</title>
-        <link rel="stylesheet" href="../css/editComplaint.css">
-    </head>
-    <body>
-        <h2>Edit Complaint</h2>
-        <% if (error != null) { %>
-        <div class="error"><%= error%></div>
-        <% } %>
+<head>
+    <title>Edit Complaint</title>
+<%--    <link rel="stylesheet" href="../css/editComplaint.css">--%>
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/css/editComplaint.css">
 
-        <form method="post" action="<%= request.getContextPath() %>/ComplaintServlet">
-            <input type="hidden" name="action" value="update">
-            <input type="hidden" name="id" value="<%= complaint.getId() %>">
+</head>
+<body>
+<h2>Edit Complaint</h2>
+<% if (error != null) { %>
+<div class="error"><%= error %></div>
+<% } %>
 
-            <label for="title">Title:</label><br>
-            <input type="text" id="title" name="title" required maxlength="100" value="<%= complaint.getTitle() %>"><br>
+<form method="post" action="<%= request.getContextPath() %>/ComplaintServlet">
+    <input type="hidden" name="action" value="update">
+    <input type="hidden" name="id" value="<%= complaint.getId() %>">
 
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" rows="4" required><%= complaint.getDescription() %></textarea><br>
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" required maxlength="100" value="<%= complaint.getTitle() %>"><br>
 
-            <button type="submit">Update</button>
-        </form>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" required><%= complaint.getDescription() %></textarea><br>
 
-        <a href="<%= request.getContextPath() %>/ComplaintServlet?action=dashboard" class="back-link">Back to Dashboard</a>
+    <button type="submit">Update</button>
+</form>
 
-    <script src="${pageContext.request.contextPath}/js/edit-complaint.js"></script>
-    </body>
+<a href="<%= request.getContextPath() %>/ComplaintServlet?action=dashboard" class="back-link">Back to Dashboard</a>
+
+<script src="${pageContext.request.contextPath}/js/edit-complaint.js"></script>
+</body>
 </html>
+

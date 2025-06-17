@@ -30,7 +30,7 @@ public class AdminServlet extends HttpServlet {
         if ("adminView".equals(action)) {
             List<Complaint> allComplaints = complaintModel.getAllComplaints();
             req.setAttribute("allComplaints", allComplaints);
-            req.getRequestDispatcher("/jsp/adminViewComplaints.jsp").forward(req, resp);
+            req.getRequestDispatcher("/jsp/AdminViewComplaints.jsp").forward(req, resp);
         } else {
             resp.sendRedirect("adminDashboard.jsp");
         }
