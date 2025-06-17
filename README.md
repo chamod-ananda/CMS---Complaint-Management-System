@@ -24,7 +24,7 @@ CMS/
 
 │ ├── controller/ # Servlet classes for request handling
 
-│ ├── dao/ # Data access objects (DAO)
+│ ├── dto/ # Data transfer objects (DTO)
 
 │ ├── model/ # JavaBeans (POJOs)
 
