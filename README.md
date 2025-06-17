@@ -58,7 +58,9 @@ Import the project into your IDE (e.g., IntelliJ IDEA or Eclipse).
 Set up a MySQL database using the schema above.
 Configure DBCPDataSource.java with your DB credentials.
 Deploy the project on Apache Tomcat (v10+ recommended).
+
 Access the system:
+
 Employee Portal: http://localhost:8080/CMS_war_exploded/ComplaintServlet?action=dashboard
 
 Admin Portal: http://localhost:8080/CMS_war_exploded/jsp/adminDashboard.jsp
