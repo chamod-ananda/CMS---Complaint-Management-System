@@ -39,7 +39,8 @@ public class RegisterServlet extends HttpServlet {
         boolean registered = model.registerUser(user);
 
         if (registered) {
-            resp.sendRedirect(req.getContextPath() + "/index.jsp?msg=registered");
+//            resp.sendRedirect(req.getContextPath() + "/index.jsp?msg=registered");
+            resp.sendRedirect(req.getContextPath() + "/jsp/login.jsp?msg=registered");
         } else {
             resp.sendRedirect(req.getContextPath() + "/jsp/register.jsp?msg=db");
         }

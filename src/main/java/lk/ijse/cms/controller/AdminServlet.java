@@ -21,7 +21,8 @@ public class AdminServlet extends HttpServlet {
         User loggedUser = (User) req.getSession().getAttribute("user");
 
         if (loggedUser == null || !"ADMIN".equals(loggedUser.getRole())) {
-            resp.sendRedirect("index.jsp?error=unauthorized");
+//            resp.sendRedirect("index.jsp?error=unauthorized");
+            resp.sendRedirect("login.jsp?error=unauthorized");
             return;
         }
 
@@ -41,7 +42,8 @@ public class AdminServlet extends HttpServlet {
         User loggedUser = (User) req.getSession().getAttribute("user");
 
         if (loggedUser == null || !"ADMIN".equals(loggedUser.getRole())) {
-            resp.sendRedirect("index.jsp?error=unauthorized");
+//            resp.sendRedirect("index.jsp?error=unauthorized");
+            resp.sendRedirect("login.jsp?error=unauthorized");
             return;
         }
 
@@ -67,7 +69,8 @@ public class AdminServlet extends HttpServlet {
                 resp.sendRedirect("AdminServlet?action=adminView&error=Delete failed");
             }
         } else {
-            resp.sendRedirect("index.jsp?error=unauthorized");
+//            resp.sendRedirect("index.jsp?error=unauthorized");
+            resp.sendRedirect("login.jsp?error=unauthorized");
         }
     }
 }

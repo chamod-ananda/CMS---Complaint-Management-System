@@ -30,10 +30,12 @@ public class LoginServlet extends HttpServlet {
             } else if("ADMIN".equals(user.getRole())){
                 resp.sendRedirect("jsp/adminDashboard.jsp");
             } else {
-                resp.sendRedirect("index.jsp?error=role");
+//                resp.sendRedirect("index.jsp?error=role");
+                resp.sendRedirect("login.jsp?error=role");
             }
         } else {
-            resp.sendRedirect("index.jsp?error=1");
+//            resp.sendRedirect("index.jsp?error=1");
+            resp.sendRedirect("login.jsp?error=1");
         }
     }
 }

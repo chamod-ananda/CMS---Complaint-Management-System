@@ -38,7 +38,7 @@
         <% } %>
     </div>
     <div class="signin-link">
-        Already have an Account? <a href="../index.jsp">Login</a>
+        Already have an Account? <a href="<%= request.getContextPath() %>/jsp/login.jsp">Login</a>
     </div>
 </div>
 

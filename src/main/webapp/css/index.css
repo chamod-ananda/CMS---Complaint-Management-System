@@ -1,0 +1,58 @@
+/* Global Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container */
+.hero-container {
+    background-color: #1e1e2f;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(127, 90, 240, 0.4);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Headline */
+.hero-container h1 {
+    font-size: 2.5rem;
+    color: #9f7aea;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+.hero-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccccff;
+    margin-bottom: 30px;
+}
+
+/* Login Button */
+.login-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #7f5af0;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 0 12px rgba(127, 90, 240, 0.4);
+}
+
+.login-btn:hover {
+    background-color: #9f7aea;
+    transform: translateY(-2px);
+}

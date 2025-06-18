@@ -13,7 +13,8 @@
 <%
     User loggedUser = (User) session.getAttribute("user");
     if (loggedUser == null || !"EMPLOYEE".equalsIgnoreCase(loggedUser.getRole())) {
-        response.sendRedirect("index.jsp?error=unauthorized");
+//        response.sendRedirect("index.jsp?error=unauthorized");
+        response.sendRedirect("login.jsp?error=unauthorized");
         return;
     }
 
