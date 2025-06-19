@@ -45,7 +45,7 @@
       for both employees and administrators. Track issues, ensure accountability,
       and resolve problems efficiently with real-time updates and an easy-to-use interface.
     </p>
-    <a href="jsp/login.jsp" class="login-btn">Login</a>
+    <a href="jsp/login.jsp" class="login-btn">Getting Started</a>
   </div>
 </div>
 </body>
